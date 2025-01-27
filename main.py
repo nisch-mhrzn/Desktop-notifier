@@ -1,14 +1,21 @@
 import datetime
 import time
+import yfinance as yf
 
+msft = yf.Ticker("MSFT")
+data = msft.info
 from plyer import notification
+
 while True:
     notification.notify(
-        title ="To-Do List".format(datetime.date.today()),
-        message="1.Live Classes \n2.Projects \n3.",
+        title="MSFT Data".format(datetime.date.today()),
+        message="Current Price ={cp}\nDayLow={dl} \nDayHigh={}".format(
+            cp=data["currentPrice"],
+            dl=data["regularMarketDayLow"],
+            dh=data["regularMarketDayHigh"],
+        ),
         app_icon="bell.ico",
-        timeout=7
+        timeout=7,
     )
 
-    time.sleep(60*60*2)
-    
+    time.sleep(60 * 60 * 2)
