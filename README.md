@@ -3,7 +3,6 @@
 ![Last Commit](https://img.shields.io/github/last-commit/nisch-mhrzn/Desktop-notifier)
 ![Repo Size](https://img.shields.io/github/repo-size/nisch-mhrzn/Desktop-notifier)
 ![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
-![License](https://img.shields.io/github/license/nisch-mhrzn/stock-notifier)
 
 This Python script sends periodic desktop notifications with the latest stock data for a specified ticker symbol using the `yfinance` and `plyer` libraries. It's designed to keep you updated on stock performance without requiring manual checks.
 
